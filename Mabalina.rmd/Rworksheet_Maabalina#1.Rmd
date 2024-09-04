@@ -1,0 +1,127 @@
+---
+title: "CS 101 ACTIVITY"
+author: "Kristian B. Mabalina"
+date: "2024-09-04"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+##1
+```{r num}
+age <- c(34, 28, 22, 36, 27, 18, 52, 39, 42, 29,
+35, 31, 27, 22, 37, 34, 19, 20, 57, 49, 50, 37, 46, 25, 17, 37, 42, 53, 41,
+51, 35, 24, 33, 41.)
+
+length(age)
+```
+##2
+```{r}
+age_reciprocal <- 1/age
+print(age_reciprocal)
+```
+##3
+```{r}
+new_age <- c(age, 0, age)
+print(new_age)
+```
+##4
+```{r}
+sort(age)
+```
+##5
+```{r}
+min(age)
+max(age)
+```
+##6
+```{r}
+data <- c (2.4, 2.8, 2.1, 2.5, 2.4, 2.2, 2.5,
+2.3, 2.5, 2.3, 2.4, 2.7)
+length(data)
+```
+##7
+```{r}
+new_vector = data
+data * 2
+```
+##8
+```{r}
+intseq <-seq(1,1000)
+print(intseq)
+```
+##8.1
+```{r}
+int8.1 <- seq(1,100)
+print(int8.1)
+```
+##8.2
+```{r}
+int8.2 <-seq(20,60)
+print(int8.1)
+```
+##8.3
+```{r}
+int8.3 <- seq(20,60)
+mean(int8.3)
+```
+##8.4
+```{r}
+int8.4 <- seq(51,91)
+print(int8.4)
+```
+##8.5
+```{r}
+int8.5 <- seq(1,1000)
+print(int8.5)
+```
+```{r}
+length(int8.1)
+length(int8.2)
+length(int8.3)
+length(int8.4)
+totallength <- sum(int8.1,int8.2,int8.3,int8.4,int8.5)
+```
+##9
+```{r}
+int9 <- seq(1,100)
+Filter(function(i) { all(i %% c(3,5,7) != 0) }, seq(100))
+print(int9)
+```
+##10
+```{r}
+int10 <- seq(100,1)
+print(int10)
+```
+##11
+```{r}
+int11 <- seq(1,25)
+int111 <- int11[int11 %% 3 == 0 | int11 %% 5 == 0]
+print(int111)
+```
+##12
+```{r}
+# x <- {0 + x + 5 + }
+```
+
+##13
+```{r}
+score <- c(72, 86, 92, 63, 88, 89, 91, 92, 75,75,77)
+print(score[2])
+print(score[3])
+```
+
+##14
+```{r}
+a = c(1,2,NA,4,NA,6,7)
+print(a,na.print="-999")
+```
+
+##15
+```{r}
+name = readline(prompt="Input your name: ")
+age = readline(prompt="Input your age: ")
+print(paste("My name is",name, "and I am",age ,"years old."))
+print(R.version.string)
+``` 
